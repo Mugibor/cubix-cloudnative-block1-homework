@@ -3,6 +3,7 @@ name: Workflow from scratch
 on:
   push:
     branches:
+      - main
       - 'feature/*'
       
 jobs:
