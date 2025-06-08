@@ -15,7 +15,8 @@ jobs:
       packages: write
     
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout the code
+        uses: actions/checkout@v4
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
@@ -40,4 +41,4 @@ jobs:
         run: docker login ghcr.io -u mugibor -p ${{ github.token }}
 
       - name: Build the Docker Image
-        run: docker build . -t ghcr.io/mugibor/cubix-cloudnative-block1-homework/app:springboot
+        run: docker build . -t ghcr.io/mugibor/cubix/1/homework/app:springboot
