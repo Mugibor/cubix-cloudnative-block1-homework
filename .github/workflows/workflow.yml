@@ -36,8 +36,8 @@ jobs:
       packages: write
 
     steps:
-      - name: Login to GitHub
-        run: docker login gchr.io -u mugibor -p ${{ github.token }}
+      - name: Log in to GitHub Container Registry
+        run: docker login ghcr.io -u mugibor -p ${{ github.token }}
 
       - name: Build the Docker Image
         run: docker build . -t ghcr.io/mugibor/cubix-cloudnative-block1-homework/app:springboot
