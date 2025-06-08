@@ -25,6 +25,6 @@ jobs:
 #          distribution: 'temurin'
 #          java-version: '21'
 #          cache: 'maven'
-  publish-docker:
-    runs-on: ubuntu-latest
-    needs: build
+#  publish-docker:
+#    runs-on: ubuntu-latest
+#    needs: build
