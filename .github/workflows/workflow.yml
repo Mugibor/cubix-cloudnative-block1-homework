@@ -59,4 +59,4 @@ jobs:
         run: docker build . -t ghcr.io/mugibor/cubix/1/homework/app:springboot
 
       - name: Push the Docker Image
-        run: docker push gchr.io/mugibor/cubix/1/homework/app:actions
+        run: docker push ghcr.io/mugibor/cubix/1/homework/app:springboot
