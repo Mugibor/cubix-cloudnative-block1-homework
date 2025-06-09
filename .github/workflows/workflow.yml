@@ -50,6 +50,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: app-jar
+          path: .
 
       - name: Log in to GitHub Container Registry
         run: docker login ghcr.io -u mugibor -p ${{ github.token }}
