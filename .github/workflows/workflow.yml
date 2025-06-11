@@ -59,3 +59,17 @@ jobs:
 
       - name: Push the Docker Image
         run: docker push ghcr.io/mugibor/cubix/1/homework/app:springboot
+
+  verify-image:
+    needs: publish-docker
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Verify the docker image
+        run: ./verify-image.sh
