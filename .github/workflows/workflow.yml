@@ -1,4 +1,4 @@
-name: Workflow from scratch
+name: Workflow for homework
 
 on:
   push:
